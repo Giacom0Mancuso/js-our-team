@@ -1,8 +1,8 @@
-
+//-----------------------------------------------------------------MAIN----------------------------------------------------------------------------------
 let ourTeam =[
     {name:"Wayne Barnett",
     role:"founder & CEO",
-    img: "wayne-barnett-founder-ceo",
+    img: "wayne-barnett-founder-ceo.jpg",
     }, 
     {name:"Angela Caroll",
     role:"Chief Editor",
@@ -26,3 +26,24 @@ let ourTeam =[
     },   
 ]
 
+    console.log(printArrayTeam(ourTeam))
+
+//---------------------------------------------------------------FUNZIONI-------------------------------------------------------------------------
+function printObject(object) {
+    let string = "";
+    for (let key in object) {
+        string += "\t " + object[key];
+    }
+    console.log(string);
+
+}
+
+function printArrayTeam(arrayTeam) {
+    for (let i = 0; i < arrayTeam.length; i++) {
+
+        let Team = arrayTeam[i];
+
+        printObject(Team);
+    }
+    return 0;
+}
